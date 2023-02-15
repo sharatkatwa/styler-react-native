@@ -4,7 +4,7 @@ import React from 'react';
 const FlatCards = () => {
   return (
     <View>
-      <Text style={styles.headingText}>FlatCards</Text>
+      <Text style={styles.headingText}>Flat Cards</Text>
       <View style={styles.container}>
         <View style={[styles.card, styles.cardOne]}>
           <Text>pink</Text>
