@@ -67,6 +67,8 @@ const styles = StyleSheet.create({
   cardEvaluation: {},
   headingContainer: {},
   headerText: {},
+  bodyContainer: {},
+  bodyText: {},
   cardImage: {
     flex: 1,
     alignSelf: 'center',
