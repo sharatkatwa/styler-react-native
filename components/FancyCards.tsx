@@ -64,11 +64,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 2,
 
-    color: '#060047',
+    color: '#18122B',
   },
   cardLable: {
     fontSize: 16,
-    color: '#060047',
+    color: '#18122B',
   },
   cardDescription: {
     fontSize: 14,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   cardFooter: {
     flex: 1,
     alignSelf: 'flex-end',
-    color: '#060047',
+    color: '#18122B',
     marginTop: 28,
   },
 });

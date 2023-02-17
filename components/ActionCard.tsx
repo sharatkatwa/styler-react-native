@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.4,
   },
   cardEvaluation: {
-    backgroundColor: '#060047',
+    backgroundColor: '#18122B',
     elevation: 4,
   },
   headingContainer: {

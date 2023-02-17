@@ -7,13 +7,13 @@ const FlatCards = () => {
       <Text style={styles.headingText}>Flat Cards</Text>
       <View style={styles.container}>
         <View style={[styles.card, styles.cardOne]}>
-          <Text>pink</Text>
+          <Text style={styles.cardText}>pink</Text>
         </View>
         <View style={[styles.card, styles.cardTwo]}>
-          <Text>dark pink</Text>
+          <Text style={styles.cardText}>dark pink</Text>
         </View>
         <View style={[styles.card, styles.cardThree]}>
-          <Text>darker pink</Text>
+          <Text style={styles.cardText}>darker pink</Text>
         </View>
         {/* <View style={[styles.card, styles.cardOne]}>
           <Text>pink</Text>
@@ -46,13 +46,16 @@ const styles = StyleSheet.create({
     margin: 8,
   },
   cardOne: {
-    backgroundColor: '#FF5F9E',
+    backgroundColor: '#393053',
   },
   cardTwo: {
-    backgroundColor: '#E90064',
+    backgroundColor: '#393053',
   },
   cardThree: {
-    backgroundColor: '#B3005E',
+    backgroundColor: '#393053',
+  },
+  cardText: {
+    color: '#fff',
   },
 });
 
