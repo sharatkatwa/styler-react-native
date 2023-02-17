@@ -39,6 +39,10 @@ const styles = StyleSheet.create({
   cardEvaluation: {
     backgroundColor: '#fff',
     elevation: 4,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
   },
   cardImage: {
     flex: 1,

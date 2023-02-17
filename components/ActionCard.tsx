@@ -14,19 +14,21 @@ export default function ActionCard() {
   }
   return (
     <View>
-      <Text style={styles.headingText}>Action Card</Text>
+      <Text style={styles.headingText}>Blog Card</Text>
       <View style={[styles.cards, styles.cardEvaluation]}>
         <View style={styles.headingContainer}>
           <Text style={styles.headerText}>
             Relational vs Non-Relational Database
           </Text>
         </View>
+
         <Image
           source={{
             uri: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1675063971510/51fccb5c-da9f-4403-9b93-0034f69730ac.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
           }}
           style={styles.cardImage}
         />
+
         <View style={styles.bodyContainer}>
           <Text numberOfLines={3} style={styles.bodyText}>
             Let’s start simple. What is a database? A database is a set of data
@@ -42,11 +44,11 @@ export default function ActionCard() {
                 'https://simple-express.hashnode.dev/relational-vs-non-relational-database',
               )
             }>
-            <Text>Read More</Text>
+            <Text style={styles.socialLinks}>Read More</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => openWebsite('https://twitter.com/kartikkhode21')}>
-            <Text>Follow Me</Text>
+            <Text style={styles.socialLinks}>Follow Me</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -62,18 +64,62 @@ const styles = StyleSheet.create({
   },
   cards: {
     flex: 1,
+    alignContent: 'center',
     marginHorizontal: 8,
+    width: 340,
+    height: 345,
+    borderRadius: 8,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowOpacity: 0.4,
   },
-  cardEvaluation: {},
-  headingContainer: {},
-  headerText: {},
-  bodyContainer: {},
-  bodyText: {},
+  cardEvaluation: {
+    backgroundColor: '#060047',
+    elevation: 4,
+  },
+  headingContainer: {
+    height: 40,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  headerText: {
+    fontSize: 18,
+    color: '#fff',
+    fontWeight: '600',
+  },
+  bodyContainer: {
+    paddingHorizontal: 10,
+    paddingVertical: 15,
+  },
+  bodyText: {
+    color: '#fff',
+  },
   cardImage: {
-    flex: 1,
+    // borderBottomLeftRadius: 8,
+    // borderBottomRightRadius: 8,
+    borderRadius: 5,
     alignSelf: 'center',
-    height: 200,
-    width: 350,
+    height: 180,
+    width: 320,
   },
-  footerContainer: {},
+
+  gradient: {},
+
+  footerContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  socialLinks: {
+    fontSize: 16,
+    backgroundColor: '#fff',
+    color: '#18191A',
+    paddingHorizontal: 8,
+    paddingVertical: 5,
+    borderRadius: 6,
+    elevation: 2,
+  },
 });
