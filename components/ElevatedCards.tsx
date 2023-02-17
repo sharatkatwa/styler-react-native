@@ -54,9 +54,9 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
   },
   cardOne: {
-    backgroundColor: '#060047',
+    backgroundColor: '#635985',
   },
   cardTwo: {
-    backgroundColor: '#FF5F9E',
+    backgroundColor: '#635985',
   },
 });
